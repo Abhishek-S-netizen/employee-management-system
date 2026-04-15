@@ -1,0 +1,72 @@
+:root {
+  --bg-page: #f9fafb;
+  --bg-sidebar: #171717;
+  --bg-card: #ffffff;
+
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+
+  --border-light: #e5e7eb;
+  --border-focus: #d1d5db;
+
+  --color-primary: #000000;
+
+  /* Role Badge Colors based on Dashboard */
+  --badge-admin-bg: #111827;
+  --badge-admin-text: #ffffff;
+
+  --badge-manager-bg: #f3e8ff;
+  --badge-manager-text: #9333ea;
+
+  --badge-developer-bg: #eff6ff;
+  --badge-developer-text: #3b82f6;
+
+  --badge-intern-bg: #fef3c7;
+  --badge-intern-text: #d97706;
+
+  /* Status Colors */
+  --status-active-text: #22c55e;
+
+  --font-base: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-base);
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Global utility classes to mimic Tailwind/Design System */
+button {
+  font-family: var(--font-base);
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+input,
+select {
+  font-family: var(--font-base);
+  outline: none;
+}
+
+/* Responsive Main Shell Spacing */
+.main-content-area {
+  padding: 20px 40px;
+}
+
+@media (max-width: 768px) {
+  .main-content-area {
+    padding: 0;
+    /* Remove gaps for mobile Dark Mode */
+  }
+}

@@ -1,0 +1,73 @@
+@import './Modal.css';
+
+.confirm-modal-text {
+    color: #4b5563;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.btn-cancel {
+    background-color: transparent;
+    border: 1px solid #d1d5db;
+    color: #374151;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-cancel:hover {
+    background-color: #f9fafb;
+    border-color: #9ca3af;
+}
+
+.btn-danger {
+    background-color: #ef4444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.2s;
+    box-shadow: 0 4px 6px -1px rgba(239, 68, 68, 0.2);
+}
+
+.btn-danger:hover {
+    background-color: #dc2626;
+    transform: translateY(-1px);
+}
+
+.btn-danger:active {
+    transform: translateY(0);
+}
+
+/* --- Mobile Dark Theme Overhaul --- */
+@media (max-width: 768px) {
+    .confirm-modal-text {
+        color: #94a3b8 !important;
+    }
+
+    .btn-cancel {
+        border-color: #2e2e2e !important;
+        color: #64748b !important;
+        background: transparent !important;
+        font-weight: 700 !important;
+    }
+
+    .btn-danger {
+        background-color: #DC2626 !important;
+        padding: 12px 24px !important;
+        border-radius: 10px !important;
+        font-weight: 800 !important;
+        box-shadow: 0 4px 15px rgba(220, 38, 38, 0.3) !important;
+    }
+
+    .btn-danger:hover {
+        background-color: #ef4444 !important;
+    }
+}

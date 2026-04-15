@@ -1,0 +1,29 @@
+- [ ] Setup Backend Foundation
+    - [ ] Initialize Express project
+    - [ ] Configure PostgreSQL connection
+    - [ ] Set up environment variables (.env)
+- [ ] Database Implementation
+    - [ ] Create `users` table
+    - [ ] Create `offer_letters` table
+    - [ ] Implement SQL repository layer
+- [ ] Core Logic & Workflow
+    - [ ] Implement `employee_code` generation logic
+    - [ ] Create offer letter HTML templates (Employee/Intern)
+    - [ ] Task Orchestration:
+        - [ ] DB Transaction: User Insert + Offer Letter Placeholder
+        - [ ] PDF Generation (Puppeteer)
+        - [ ] Cloud Storage (Cloudinary Upload)
+        - [ ] Post-Upload: DB Link Update
+        - [ ] Email Delivery (Nodemailer)
+- [ ] API Development
+    - [ ] Create POST `/api/employees/appoint` endpoint
+    - [ ] Implement validation logic
+    - [ ] Implement post-commit asynchronous/sequential operations
+- [ ] Frontend Development
+    - [ ] Build React form with validation
+    - [ ] Connect form to backend API
+    - [ ] Implement success/error handling UI
+- [ ] Verification
+    - [ ] Verify database state after transaction commit
+    - [ ] Verify final `offer_letters` link update
+    - [ ] Test end-to-end appointment flow (Manual)

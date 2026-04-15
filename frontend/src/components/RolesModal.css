@@ -1,0 +1,124 @@
+@import './Modal.css';
+
+.roles-modal-card {
+    max-width: 420px;
+    width: 100%;
+}
+
+.roles-list-container {
+    width: 100%;
+    max-height: 240px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+}
+
+.role-row-item {
+    padding: 12px 0;
+    border-bottom: 1px solid #f1f5f9;
+    font-size: 14px;
+    font-weight: 500;
+    color: #1e293b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.add-role-form {
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    padding-top: 16px;
+    border-top: 1px solid #f1f5f9;
+}
+
+.add-role-input {
+    flex: 1;
+    padding: 12px 14px;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    font-size: 14px;
+    font-weight: 500;
+    background: #ffffff;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.add-role-input:focus {
+    border-color: #922D2F;
+    box-shadow: 0 0 0 4px rgba(146, 45, 47, 0.1);
+    outline: none;
+}
+
+.role-actions {
+    display: flex;
+    gap: 8px;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.role-row-item:hover .role-actions {
+    opacity: 1;
+}
+
+.role-btn {
+    background: transparent;
+    padding: 4px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.15s;
+}
+
+.role-btn-edit {
+    color: #94a3b8;
+}
+
+.role-btn-edit:hover {
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+.role-btn-delete {
+    color: #fecaca;
+}
+
+.role-btn-delete:hover {
+    background-color: #fef2f2;
+    color: #ef4444;
+}
+
+.edit-role-input {
+    flex: 1;
+    border: 1px solid #922D2F;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(146, 45, 47, 0.1);
+}
+
+.btn-modal-submit {
+    background: #000000;
+    color: white;
+    border: none;
+    padding: 0 16px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.btn-modal-submit:hover {
+    background: #DC2626;
+    transform: scale(1.05);
+}
+
+.btn-modal-submit:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
